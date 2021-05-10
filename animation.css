@@ -1,0 +1,51 @@
+.plane-container {
+  width: 200px;
+  z-index: 3;
+}
+.plane {
+  width: 35px;
+  height: 35px;
+}
+/*Paper Plane: Animation*/
+.plane-container {
+  -webkit-animation: paper-plane-scoping 3s infinite;
+  -moz-animation: paper-plane-scoping 3s infinite;
+  animation: paper-plane-scoping 3s infinite;
+
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+@keyframes paper-plane-scoping {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+  100% {
+    -webkit-transform: translate(100vw, 100px);
+    -moz-transform: translate(100vw, 100px);
+    transform: translate(100vw, 100px);
+  }
+}
+.plane {
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+
+  -webkit-animation: paper-plane-soaring 3s forwards;
+  -moz-animation: paper-plane-soaring 3s forwards;
+  animation: paper-plane-soaring 3s forwards;
+}
+@keyframes paper-plane-soaring {
+  60% {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    transform: rotate(50deg);
+  }
+}

@@ -1,0 +1,369 @@
+:root {
+  --color-purple: rgba(150, 73, 186, 1);
+  --color-light-purple: rgba(192, 91, 239, 0.72);
+  --color-blue: rgba(11, 8, 137, 1);
+  --color-light-gray: rgba(250, 250, 250, 1);
+  --color-light-gray: #f2f2f2;
+  --color-gray: rgba(83, 83, 83, 1);
+}
+html {
+  color: var(--color-gray);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+body {
+  margin: 0;
+}
+nav,
+.nav-items {
+  display: inline-flex;
+}
+a,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+h1 {
+  color: var(--color-purple);
+  font-size: 1.4rem;
+}
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  background: -webkit-linear-gradient(
+    rgba(12, 17, 129, 0.8),
+    rgba(138, 32, 224, 0.87),
+    rgba(185, 0, 44, 0.44)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+header h2 {
+  background: -webkit-linear-gradient(
+    rgba(34, 12, 124, 0.81),
+    rgba(129, 38, 161, 0.58),
+    rgba(195, 61, 3, 0.767)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 300;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.3rem;
+}
+h3 {
+  font-weight: 300;
+  font-family: "Nunito", sans-serif;
+  color: var(--color-blue);
+  font-size: 1.6rem;
+}
+h4 {
+  color: var(--color-purple);
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+section {
+  padding: 35px 40px 40px 40px;
+}
+@media only screen and (min-width: 780px) {
+  header h1 {
+    font-size: 4.5rem;
+  }
+  section {
+    padding: 20px 70px 35px 70px;
+  }
+}
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  padding: 10px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+/* UTILITIES */
+.nobullets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.inline {
+  display: inline-flex;
+}
+.accent {
+  color: var(--color-purple);
+}
+.bold {
+  font-weight: 700;
+}
+.center {
+  text-align: center;
+}
+.icon-m {
+  width: 60px;
+  height: 60px;
+}
+.icon-s {
+  width: 40px;
+  height: 40px;
+}
+.icon-xs {
+  width: 20px;
+  height: 20px;
+  margin: auto 10px;
+}
+.colored-background {
+  background: var(--color-light-gray);
+}
+.flexbox {
+  display: flex;
+  flex-direction: column;
+}
+.flexbox-reverse {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+@media only screen and (min-width: 780px) {
+  .flexbox {
+    flex-direction: row;
+  }
+  .flexbox-reverse {
+    flex-direction: column;
+  }
+}
+/* NAVIGATION BAR */
+nav {
+  box-sizing: border-box;
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-items {
+  display: none;
+}
+@media only screen and (min-width: 800px) {
+  .nav-items {
+    display: inherit;
+    white-space: nowrap;
+    justify-content: space-evenly;
+    width: 600px;
+  }
+}
+.nav-item {
+  text-align: center;
+  width: 100%;
+}
+.nav-item a:hover,
+.nav-item a:focus,
+.nav-item a:active {
+  color: var(--color-purple);
+}
+.nav-item a::before {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 27px;
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-purple);
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.1s, transform 0.2s ease-out;
+}
+.nav-item a:active::before {
+  background-color: var(--color-purple);
+}
+.nav-item a:hover::before,
+a:focus::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+.logo {
+  width: 270px;
+}
+/* HEADER */
+header {
+  height: 81vh;
+  width: 70%;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header h3 {
+  margin: 10px 0;
+}
+.information {
+  margin-bottom: 40px;
+}
+/* SECTION INTRODUCTION */
+#introduction {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+.introduction {
+  margin: 0 40px;
+}
+@media only screen and (min-width: 780px) {
+  .introduction-section {
+    flex-direction: row;
+  }
+  .introduction-section h4 {
+    text-align: left;
+  }
+  .introduction {
+    margin: 0 40px 0 0;
+  }
+}
+.img-students {
+  width: 340px;
+  height: fit-content;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 8px 8px rgba(123, 62, 221, 0.4);
+}
+/* SECTION PARTICIPATION */
+.circle {
+  padding: 5px 10px;
+  height: fit-content;
+  border-radius: 50%;
+  text-align: center;
+  color: var(--color-purple);
+  background: var(--color-light-gray);
+}
+/* #icon1,
+#icon2,
+#icon3 {
+  position: relative;
+}
+#icon1 {
+  left: 0px;
+}
+#icon2 {
+  left: 100px;
+}
+#icon3 {
+  left: 200px;
+} */
+svg {
+  width: 0;
+  height: 0;
+}
+svg polyline,
+svg line,
+svg path {
+  fill: none;
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: 0.2s;
+}
+/* SECTION CATEGORIES */
+#categories {
+  background: var(--color-light-gray);
+}
+.category {
+  border: 2px solid var(--color-purple);
+  border-radius: 12px;
+  padding: 20px;
+  color: var(--color-purple);
+}
+.colored {
+  filter: invert(70%) sepia(49%) saturate(1723%) hue-rotate(252deg)
+    brightness(88%) contrast(82%);
+  text-align: center;
+  width: 100%;
+}
+/* SECTION PRIZES */
+.prize {
+  padding: 10px;
+  box-shadow: 0px 5px 5px 0.1px rgb(228, 228, 228);
+  height: 200px;
+  border-radius: 20px 20px 0px 0px;
+  height: fit-content;
+}
+.category,
+.prize-container {
+  width: 60vw;
+  margin: 10px auto;
+}
+@media only screen and (min-width: 780px) {
+  .prize,
+  .category {
+    margin: 10px;
+  }
+}
+.prize-img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+/* SECTION DONATION */
+#donation {
+  background: rgba(150, 73, 186, 0.9);
+  color: #fff;
+  text-align: center;
+  padding: 60px 40px;
+}
+#donation p {
+  max-width: 500px;
+  margin: 1.4em auto;
+  font-size: 1.1rem;
+}
+
+.btn-white {
+  background: #fff;
+  color: rgba(150, 73, 186, 0.9);
+}
+.btn-purple {
+  background: var(--color-purple);
+  color: #fff;
+}
+/* FOOTER */
+footer {
+  background: var(--color-light-gray);
+  padding: 20px;
+  text-align: center;
+}
+@media only screen and (min-width: 780px) {
+  footer {
+    width: 100%;
+    align-items: center;
+    height: 80px;
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 0 20%;
+    box-sizing: border-box;
+  }
+}
+footer p {
+  font-size: 0.9rem;
+}
+
+.quote {
+  font-style: italic;
+}
+@media only screen and (min-width: 780px) {
+  .quote {
+    margin: 30px;
+  }
+}
