@@ -321,8 +321,8 @@ svg path {
 #donation {
   background: rgba(150, 73, 186, 0.9);
   color: #fff;
-  text-align: center;
   padding: 60px 40px;
+  text-align: center;
 }
 #donation p {
   max-width: 500px;
