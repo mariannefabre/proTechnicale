@@ -1,13 +1,16 @@
 .plane-container {
-  width: 200px;
   z-index: 3;
+  width: 100vw;
 }
 .plane {
-  width: 35px;
-  height: 35px;
+  width: 100vw;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  height: 90vh;
 }
 /*Paper Plane: Animation*/
-.plane-container {
+/* .plane-container {
   -webkit-animation: paper-plane-scoping 3s infinite;
   -moz-animation: paper-plane-scoping 3s infinite;
   animation: paper-plane-scoping 3s infinite;
@@ -18,14 +21,14 @@
 }
 @keyframes paper-plane-scoping {
   0% {
-    -webkit-transform: translate(0px, 0px);
-    -moz-transform: translate(0px, 0px);
-    transform: translate(0px, 0px);
+    -webkit-transform: translate(-50vw, 0px);
+    -moz-transform: translate(-50vw, 0px);
+    transform: translate(-50vw, 0px);
   }
   100% {
-    -webkit-transform: translate(100vw, 100px);
-    -moz-transform: translate(100vw, 100px);
-    transform: translate(100vw, 100px);
+    -webkit-transform: translate(50vw, 100px);
+    -moz-transform: translate(50vw, 100px);
+    transform: translate(50vw, 100px);
   }
 }
 .plane {
@@ -38,7 +41,7 @@
   animation: paper-plane-soaring 3s forwards;
 }
 @keyframes paper-plane-soaring {
-  60% {
+  0% {
     -webkit-transform: rotate(15deg);
     -moz-transform: rotate(15deg);
     transform: rotate(15deg);
@@ -48,4 +51,12 @@
     -moz-transform: rotate(50deg);
     transform: rotate(50deg);
   }
+} */
+.planePath {
+  stroke: #d9dada;
+  stroke-width: 0.1%;
+  stroke-width: 0.5%;
+  stroke-dasharray: 1% 2%;
+  stroke-linecap: round;
+  fill: none;
 }
