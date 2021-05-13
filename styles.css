@@ -72,16 +72,25 @@ h4 {
   margin-top: 2rem;
 }
 section {
-  padding: 35px 40px 40px 40px;
+  padding: 40px;
 }
 @media only screen and (min-width: 780px) {
   header h1 {
     font-size: 4.5rem;
   }
   section {
-    padding: 20px 70px 35px 70px;
+    padding: 50px 70px 70px 70px;
   }
 }
+@media only screen and (min-width: 1400px) {
+  header h1 {
+    font-size: 4.7rem;
+  }
+  section {
+    padding: 50px 130px 70px 130px;
+  }
+}
+
 button {
   background: none;
   color: inherit;
@@ -200,14 +209,20 @@ a:focus::before {
 /* HEADER */
 header {
   height: 81vh;
-  width: 70%;
-  max-width: 600px;
+  width: 90%;
+  max-width: 400px;
   margin: 20px auto;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (min-width: 780px) {
+  header {
+    width: 60%;
+    max-width: 600px;
+  }
 }
 header h3 {
   margin: 10px 0;
@@ -217,27 +232,12 @@ header h3 {
 }
 /* SECTION INTRODUCTION */
 #introduction {
-  display: flex;
-  align-items: center;
-  flex-direction: column-reverse;
+  text-align: center;
 }
-.introduction {
-  margin: 0 40px;
-}
-@media only screen and (min-width: 780px) {
-  .introduction-section {
-    flex-direction: row;
-  }
-  .introduction-section h4 {
-    text-align: left;
-  }
-  .introduction {
-    margin: 0 40px 0 0;
-  }
-}
+
 .img-students {
-  width: 340px;
-  height: fit-content;
+  width: 90%;
+  max-width: 430px;
   margin: 0 auto;
   border-radius: 8px;
   box-shadow: 8px 8px rgba(123, 62, 221, 0.4);
@@ -330,7 +330,7 @@ svg path {
   text-align: center;
 }
 #donation p {
-  max-width: 500px;
+  max-width: 1000px;
   margin: 1.4em auto;
   font-size: 1.1rem;
 }
@@ -372,6 +372,15 @@ footer p {
     margin: 30px;
   }
 }
+/* PAGE: TIPS&TRICKS */
+
+#tips,
+#about {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 700px;
+}
 
 /* PAGE: DONATION */
 
@@ -395,5 +404,4 @@ footer p {
   width: 60%;
   max-width: 700px;
   margin: 0 auto;
-  background: var(--color-light-gray);
 }
