@@ -353,10 +353,13 @@ header h3 {
   background: var(--color-light-gray);
 }
 .category {
-  border: 2px solid var(--color-purple);
   border-radius: 12px;
   padding: 20px;
   color: var(--color-purple);
+}
+.separator {
+  height: 2px;
+  background: #f3d55b;
 }
 .colored {
   filter: invert(70%) sepia(49%) saturate(1723%) hue-rotate(252deg)
