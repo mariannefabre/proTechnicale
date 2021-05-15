@@ -495,3 +495,16 @@ footer p {
   justify-content: space-between;
   max-width: 700px;
 }
+
+/* PAGE: ABOUT */
+
+.iframe {
+  width: 350px;
+  height: 215px;
+}
+@media only screen and (min-width: 650px) {
+  .iframe {
+    width: 560px;
+    height: 315px;
+  }
+}
