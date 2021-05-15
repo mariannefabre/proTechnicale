@@ -86,7 +86,6 @@ section {
     padding: 50px 130px 70px 130px;
   }
 }
-
 button {
   background: none;
   color: inherit;
@@ -155,13 +154,12 @@ button {
 nav {
   display: inline-flex;
 }
-
 @media only screen and (max-width: 780px) {
   #nav-icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 1.8rem;
     position: fixed;
-    top: 20px;
+    top: 30px;
     right: 18px;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -170,49 +168,39 @@ nav {
     cursor: pointer;
     z-index: 4;
   }
-
   #nav-icon span {
-    z-index: 4;
-    display: block;
     position: absolute;
-    height: 2px;
+    height: 2.2px;
     width: 100%;
     background-color: var(--color-purple);
     border-radius: 9px;
-    opacity: 1;
     right: 0;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     -webkit-transition: 0.25s ease-in-out;
     transition: 0.25s ease-in-out;
   }
-
   #nav-icon span:nth-child(1) {
     top: 0px;
   }
-
   #nav-icon span:nth-child(2),
   #nav-icon span:nth-child(3) {
     top: 9px;
     width: 80%;
   }
-
   #nav-icon span:nth-child(4) {
     top: 18px;
   }
-
   #nav-icon.open span:nth-child(1),
   #nav-icon.open span:nth-child(4) {
     top: 9px;
     width: 0%;
     right: 50%;
   }
-
   #nav-icon.open span:nth-child(2) {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-
   #nav-icon.open span:nth-child(3) {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
@@ -230,7 +218,6 @@ nav {
     padding-top: 30vh;
     text-align: center;
   }
-
   .nav-item a {
     padding-bottom: 1.2em;
     display: block;
@@ -238,7 +225,6 @@ nav {
     color: var(--color-purple);
   }
 }
-
 nav {
   box-sizing: border-box;
   padding: 15px;
@@ -247,7 +233,6 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-
 @media only screen and (min-width: 780px) {
   #nav-icon {
     display: none;
@@ -289,7 +274,6 @@ nav {
     transform: scale(1, 1);
   }
 }
-
 .logo {
   width: 270px;
 }
@@ -321,7 +305,6 @@ header h3 {
 #introduction {
   text-align: center;
 }
-
 .img-students {
   width: 90%;
   max-width: 430px;
@@ -338,24 +321,6 @@ header h3 {
   color: var(--color-purple);
   background: var(--color-light-gray);
 }
-/* #icon1,
-#icon2,
-#icon3 {
-  position: relative;
-}
-#icon1 {
-  left: 0px;
-}
-#icon2 {
-  left: 100px;
-}
-#icon3 {
-  left: 200px;
-} */
-/* svg {
-  width: 0;
-  height: 0;
-} */
 svg polyline,
 svg line,
 svg path {
