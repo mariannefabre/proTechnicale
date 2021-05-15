@@ -457,3 +457,13 @@ footer p {
   max-width: 700px;
   margin: 0 auto;
 }
+/* PAGE: CONTACT */
+.img-portrait {
+  width: 210px;
+  height: 210px;
+  object-fit: cover;
+}
+.contact {
+  justify-content: space-between;
+  max-width: 700px;
+}
