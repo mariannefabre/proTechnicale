@@ -141,6 +141,7 @@ button {
   flex-wrap: nowrap;
   flex-direction: row;
 }
+
 @media only screen and (min-width: 780px) {
   .flexbox {
     flex-direction: row;
@@ -153,6 +154,12 @@ button {
 
 nav {
   display: inline-flex;
+  box-sizing: border-box;
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 780px) {
   #nav-icon {
@@ -224,14 +231,6 @@ nav {
     font-size: 25px;
     color: var(--color-purple);
   }
-}
-nav {
-  box-sizing: border-box;
-  padding: 15px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 @media only screen and (min-width: 780px) {
   #nav-icon {
@@ -313,22 +312,41 @@ header h3 {
   box-shadow: 8px 8px rgba(123, 62, 221, 0.4);
 }
 /* SECTION PARTICIPATION */
-.circle {
-  padding: 5px 10px;
-  height: fit-content;
-  border-radius: 50%;
+#participation {
   text-align: center;
-  color: var(--color-purple);
-  background: var(--color-light-gray);
 }
-svg polyline,
-svg line,
-svg path {
-  fill: none;
-  stroke: #000;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  transition: 0.2s;
+@media only screen and (max-width: 780px) {
+  .participation-icons {
+    width: 25vw;
+    max-width: 110px;
+  }
+}
+@media only screen and (min-width: 780px) {
+  .participation-icons {
+    width: 90%;
+    max-width: 750px;
+    margin-bottom: 60px;
+  }
+}
+.number {
+  font-size: 9rem;
+  line-height: 0.8;
+  color: rgba(178, 178, 178, 0.28);
+  font-weight: 700;
+  position: relative;
+  left: 40px;
+  bottom: 33px;
+}
+.participation-step {
+  text-align: left;
+}
+.steps {
+  justify-content: space-evenly;
+}
+@media only screen and (max-width: 500px) {
+  .steps {
+    margin-left: -25px;
+  }
 }
 /* SECTION CATEGORIES */
 #categories {
@@ -366,6 +384,13 @@ svg path {
   .prize,
   .category {
     margin: 10px;
+  }
+  .prize {
+    height: 85%;
+  }
+  .category,
+  .prize-container {
+    width: 100%;
   }
 }
 .img-prize {
