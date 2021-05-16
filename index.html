@@ -24,7 +24,6 @@
     />
     <link rel="shortcut icon" type="image/png" href="./favicon.png" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="animation.css" />
     <title>proTechnicale Paper Plane Challenge</title>
   </head>
   <body>
@@ -51,7 +50,15 @@
     </nav>
     <header>
       <div class="plane-container">
-        <img src="./resources/plane.svg" class="plane" />
+        <!--         <img src="./resources/plane.svg" class="plane" />
+ -->
+        <picture>
+          <source
+            srcset="./resources/plane-desktop.svg"
+            media="(min-width: 780px)"
+          />
+          <img src="./resources/plane.svg" class="plane" />
+        </picture>
       </div>
 
       <h1 class="fadeIn">Paper Plane Challenge</h1>
@@ -88,19 +95,16 @@
         Macht mit beim proTechnicale Papierflieger Wettbewerb!<br /><br />
         So geht's:
       </h4>
-      <div class="flexbox-reverse">
+      <div class="flexbox-reverse slideIn">
         <picture>
           <source
             srcset="./resources/icons-desktop.svg"
             media="(min-width: 780px)"
           />
-          <img
-            src="./resources/icons-mobile.svg"
-            class="participation-icons slideIn"
-          />
+          <img src="./resources/icons-mobile.svg" class="participation-icons" />
         </picture>
 
-        <div class="flexbox steps slideIn">
+        <div class="flexbox steps">
           <div class="inline">
             <div class="number">1</div>
             <div>
@@ -241,7 +245,9 @@
         ihre MINT-Karriere zu machen.<br /><br />Wir sagen schon einmal vielen
         Dank!
       </p>
-      <button class="btn-white"><a href="./spenden.html">Spenden</a></button>
+      <button class="btn-white">
+        <a href="./spenden.html">Spenden</a>
+      </button>
     </section>
 
     <footer>
