@@ -535,6 +535,7 @@ footer {
 .donation {
   width: 90%;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 @media only screen and (min-width: 780px) {
   .donation {
