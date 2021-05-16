@@ -313,8 +313,7 @@ header {
   left: 0;
   height: 90vh;
   z-index: 2;
-}
-@media only screen and (min-width: 780px) {
+  visibility: hidden;
 }
 .information {
   margin-bottom: 40px;

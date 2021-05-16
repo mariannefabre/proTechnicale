@@ -49,15 +49,16 @@
       </ul>
     </nav>
     <header>
-      <div class="plane-container">
-        <!--         <img src="./resources/plane.svg" class="plane" />
- -->
         <picture>
           <source
             srcset="./resources/plane-desktop.svg"
             media="(min-width: 780px)"
           />
-          <img src="./resources/plane.svg" class="plane" />
+          <source
+          srcset="./resources/plane-tablet.svg"
+          media="(min-width: 500px)"
+        />
+          <img src="./resources/plane.svg" id="plane" class="plane" />
         </picture>
       </div>
 
