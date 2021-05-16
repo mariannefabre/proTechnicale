@@ -376,6 +376,11 @@ header {
   padding: 20px;
   color: var(--color-purple);
 }
+.category-name {
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.1rem;
+}
 .separator {
   height: 2px;
   background: #f3d55b;
@@ -396,6 +401,7 @@ header {
 .prize p {
   margin: 0;
   padding: 20px 15px;
+  color: rgb(128, 128, 128);
 }
 .category,
 .prize-container {
@@ -421,6 +427,7 @@ header {
 .prize-category {
   font-weight: 700;
   margin: 10px;
+  font-size: 1.1rem;
 }
 .img-prize {
   object-fit: cover;
@@ -523,13 +530,12 @@ footer {
   }
 }
 /* PAGE: DONATION */
-.wrapper {
+.donation {
   width: 90%;
-  text-align: center;
   margin: 0 auto;
 }
 @media only screen and (min-width: 780px) {
-  .wrapper {
+  .donation {
     width: 80%;
     max-width: 700px;
   }
