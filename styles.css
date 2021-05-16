@@ -302,8 +302,12 @@ header {
     max-width: 600px;
   }
 }
-.plane {
+.plane-container {
+  z-index: 1;
   width: 100vw;
+}
+.plane {
+  width: 100%;
   position: absolute;
   top: 70px;
   left: 0;
@@ -598,6 +602,7 @@ footer {
 .slideIn,
 .fadeIn {
   visibility: hidden;
+  overflow: hidden;
 }
 .fade-in {
   animation: fadeIn 1.4s;
