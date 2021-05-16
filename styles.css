@@ -412,22 +412,24 @@ header {
   margin-bottom: 30px;
 }
 @media only screen and (min-width: 780px) {
-  .prize,
+  .prize-container,
   .category {
     margin: 10px;
+    width: 100%;
   }
   .prize {
-    height: 85%;
-  }
-  .category,
-  .prize-container {
-    width: 100%;
+    height: 88%;
   }
 }
 .prize-category {
   font-weight: 700;
   margin: 10px;
   font-size: 1.1rem;
+}
+@media only screen and (min-width: 780px) and (max-width: 900px) {
+  .prize-category {
+    width: 50%;
+  }
 }
 .img-prize {
   object-fit: cover;
@@ -488,7 +490,7 @@ footer {
   font-family: "Josefin Sans", sans-serif;
 }
 .links-footer p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 @media only screen and (min-width: 780px) {
@@ -501,7 +503,7 @@ footer {
   }
 }
 .author {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 300;
 }
 /* PAGE: TIPS&TRICKS */
