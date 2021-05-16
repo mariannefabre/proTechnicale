@@ -1,4 +1,4 @@
-.plane-container {
+/* .plane-container {
   z-index: 1;
   width: 100vw;
 }
@@ -9,49 +9,6 @@
   left: 0;
   height: 90vh;
 }
-/*Paper Plane: Animation*/
-/* .plane-container {
-  -webkit-animation: paper-plane-scoping 3s infinite;
-  -moz-animation: paper-plane-scoping 3s infinite;
-  animation: paper-plane-scoping 3s infinite;
-
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
-@keyframes paper-plane-scoping {
-  0% {
-    -webkit-transform: translate(-50vw, 0px);
-    -moz-transform: translate(-50vw, 0px);
-    transform: translate(-50vw, 0px);
-  }
-  100% {
-    -webkit-transform: translate(50vw, 100px);
-    -moz-transform: translate(50vw, 100px);
-    transform: translate(50vw, 100px);
-  }
-}
-.plane {
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-
-  -webkit-animation: paper-plane-soaring 3s forwards;
-  -moz-animation: paper-plane-soaring 3s forwards;
-  animation: paper-plane-soaring 3s forwards;
-}
-@keyframes paper-plane-soaring {
-  0% {
-    -webkit-transform: rotate(15deg);
-    -moz-transform: rotate(15deg);
-    transform: rotate(15deg);
-  }
-  100% {
-    -webkit-transform: rotate(50deg);
-    -moz-transform: rotate(50deg);
-    transform: rotate(50deg);
-  }
-} */
 .planePath {
   stroke: #d9dada;
   stroke-width: 0.1%;
@@ -59,4 +16,67 @@
   stroke-dasharray: 1% 2%;
   stroke-linecap: round;
   fill: none;
+}
+ */
+
+.plane-container {
+  -webkit-animation: paper-plane-scoping 3s alternate;
+  -moz-animation: paper-plane-scoping 3s alternate;
+  animation: paper-plane-scoping 3s alternate;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+@keyframes paper-plane-scoping {
+  0% {
+    -webkit-transform: translate(-50vw, -100px);
+    -moz-transform: translate(-50vw, -100px);
+    transform: translate(-50vw, -100px);
+  }
+  100% {
+    -webkit-transform: translate(50vw, 50px);
+    -moz-transform: translate(50vw, 50px);
+    transform: translate(50vw, 50px);
+  }
+}
+.plane {
+  transform: rotate(-10deg);
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+/* TITLE ANIMATION */
+svg text {
+  font-family: "Open Sans", sans-serif;
+  stroke: rgba(192, 91, 239, 0.72);
+  font-size: 4rem;
+  font-weight: 700;
+  stroke-width: 2.5;
+  animation: textAnimate 6s infinite alternate;
+}
+@media only screen and (min-width: 500px) {
+  svg text {
+    font-size: 4.8rem;
+  }
+}
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    fill: rgba(198, 119, 243, 0.705);
+  }
+  60% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    fill: rgba(203, 139, 233, 0.432);
+  }
+
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffset: -20%;
+    fill: rgba(255, 222, 131, 0.733);
+    fill: rgba(198, 156, 252, 0.616);
+    fill: transparent;
+  }
 }
