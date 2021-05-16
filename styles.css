@@ -302,6 +302,14 @@ header {
     max-width: 600px;
   }
 }
+.plane {
+  width: 100vw;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  height: 100vh;
+  z-index: 2;
+}
 .information {
   margin-bottom: 40px;
 }
