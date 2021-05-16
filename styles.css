@@ -158,7 +158,6 @@ button {
   }
 }
 /* NAVIGATION BAR */
-
 nav {
   display: inline-flex;
   box-sizing: border-box;
@@ -242,7 +241,6 @@ nav {
   #nav-icon {
     display: none;
   }
-
   #nav-items {
     display: inline-flex;
     white-space: nowrap;
@@ -430,7 +428,6 @@ header h3 {
   margin: 1.4em auto;
   font-size: 1.1rem;
 }
-
 .btn-white {
   background: #fff;
   color: rgba(150, 73, 186, 0.9);
@@ -458,17 +455,15 @@ footer {
 }
 footer p {
   font-size: 0.9rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
 }
-.quote {
-  font-style: italic;
-}
-@media only screen and (min-width: 780px) {
-  .quote {
-    margin: 30px;
-  }
+.author {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  font-weight: 300;
 }
 /* PAGE: TIPS&TRICKS */
-
 #tips {
   text-align: center;
   margin: 0 auto;
@@ -485,8 +480,15 @@ footer p {
   margin: 10px;
   height: auto;
 }
+.quote {
+  font-style: italic;
+}
+@media only screen and (min-width: 780px) {
+  .quote {
+    margin: 30px;
+  }
+}
 /* PAGE: DONATION */
-
 .wrapper {
   width: 90%;
   text-align: center;
@@ -508,7 +510,6 @@ footer p {
   margin: 0 auto;
 }
 /* PAGE: CONTACT */
-
 .contact {
   justify-content: space-between;
   max-width: 700px;
@@ -519,7 +520,6 @@ footer p {
   object-fit: cover;
 }
 /* PAGE: ABOUT */
-
 .about {
   text-align: center;
   width: 80%;
