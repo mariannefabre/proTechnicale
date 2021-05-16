@@ -1,36 +1,63 @@
-// path
+// side menu
 
-document.getElementById("path").setAttribute("d", "M2,5 S2,14 4,5 S7,8 8,4");
+let sideNav = document.getElementById("nav-items");
 
-console.log(document.getElementById("path").getAttribute("d"));
+const openSideNav = function () {
+  function isNavOpen() {
+    return sideNav.style.width === "100%" ? true : false;
+  }
+  function openNav() {
+    sideNav.style.width = "100%";
+  }
+  function closeNav() {
+    sideNav.style.width = "0";
+  }
 
-const icon1 = document.getElementById("icon1");
-const icon2 = document.getElementById("icon2");
-const icon3 = document.getElementById("icon3");
+  document.getElementById("nav-icon").classList.toggle("open");
+  isNavOpen() ? closeNav() : openNav();
+};
 
-const icon1Offset = offset(icon1);
-const icon2Offset = offset(icon2);
-const icon3Offset = offset(icon3);
+sideNav.addEventListener("click", openSideNav, true);
 
-/* const path1 = `M${Math.floor(icon1Offset.top)},${icon1Offset.left} S${
-  icon2Offset.top - 30
-},${icon2Offset.left - 30} ${icon2Offset.top},${icon2Offset.left} S${
-  icon3Offset.top - 30
-},${icon3Offset.left - 30} ${icon3Offset.top},${icon3Offset.left}`; */
+document
+  .getElementById("nav-icon")
+  .addEventListener("click", openSideNav, true);
 
-const path1 = `M${Math.floor(icon1Offset.top)},${Math.floor(
-  icon1Offset.left
-)} S${Math.floor(icon2Offset.top)},${Math.floor(icon2Offset.left)} ${Math.floor(
-  icon2Offset.top
-)},${Math.floor(icon2Offset.left)}`;
+(function () {
+  let fadeInElements;
+  let slideInElements;
+  let windowHeight;
 
-document.getElementById("path").setAttribute("d", path1);
+  function init() {
+    fadeInElements = document.querySelectorAll(".fadeIn");
+    slideInElements = document.querySelectorAll(".slideIn");
+    windowHeight = window.innerHeight;
+  }
 
-console.log(document.getElementById("path").getAttribute("d"));
+  function checkPosition() {
+    for (let i = 0; i < fadeInElements.length; i++) {
+      let fadeInElement = fadeInElements[i];
+      let positionFromTop = fadeInElements[i].getBoundingClientRect().bottom;
 
-function offset(el) {
-  var rect = el.getBoundingClientRect(),
-    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
-}
+      if (positionFromTop - windowHeight <= 0) {
+        fadeInElement.classList.add("fade-in");
+        fadeInElement.classList.remove("fadeIn");
+      }
+    }
+    for (let j = 0; j < slideInElements.length; j++) {
+      let slideInElement = slideInElements[j];
+      let positionFromTop1 = slideInElements[j].getBoundingClientRect().bottom;
+
+      if (positionFromTop1 - windowHeight <= 0) {
+        slideInElement.classList.add("slide-in");
+        slideInElement.classList.remove("slideIn");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", checkPosition);
+  window.addEventListener("resize", init);
+
+  init();
+  checkPosition();
+})();
