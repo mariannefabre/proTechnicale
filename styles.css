@@ -30,6 +30,7 @@ a:focus {
 h1 {
   color: var(--color-purple);
   font-size: 1.4rem;
+  text-align: center;
 }
 header h1 {
   font-size: 3.5rem;
@@ -57,6 +58,8 @@ header h2 {
 }
 h2 {
   font-size: 1.3rem;
+  color: var(--color-purple);
+  text-align: center;
 }
 h3 {
   font-weight: 300;
@@ -103,6 +106,7 @@ button {
   border-radius: 25px;
   font-weight: 600;
   margin: 15px 0;
+  width: fit-content;
 }
 
 /* UTILITIES */
@@ -123,9 +127,6 @@ button {
 }
 .center {
   text-align: center;
-}
-.left {
-  text-align: left;
 }
 .icon-m {
   width: 60px;
@@ -554,9 +555,11 @@ footer {
 }
 /* PAGE: ABOUT */
 .about {
-  text-align: center;
   width: 80%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media only screen and (min-width: 780px) {
   .about {
@@ -609,7 +612,7 @@ footer {
   animation: fadeIn 1.4s;
 }
 .slide-in {
-  animation: slideIn ease-in 1s;
+  animation: slideIn ease-out 1s;
 }
 @keyframes fadeIn {
   0% {

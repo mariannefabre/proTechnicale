@@ -23,6 +23,12 @@ document
   .getElementById("nav-icon")
   .addEventListener("click", openSideNav, true);
 
+// plane animation
+setTimeout(() => {
+  document.getElementById("plane").style.visibility = "inherit";
+}, 1500);
+
+// animations
 (function () {
   let fadeInElements;
   let slideInElements;
