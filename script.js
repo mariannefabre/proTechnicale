@@ -24,6 +24,7 @@ document
   .addEventListener("click", openSideNav, true);
 
 // plane animation
+
 setTimeout(() => {
   document.getElementById("plane").style.visibility = "inherit";
 }, 1500);
@@ -32,11 +33,13 @@ setTimeout(() => {
 (function () {
   let fadeInElements;
   let slideInElements;
+  let oppositeSlideInElements;
   let windowHeight;
 
   function init() {
     fadeInElements = document.querySelectorAll(".fadeIn");
     slideInElements = document.querySelectorAll(".slideIn");
+    oppositeSlideInElements = document.querySelectorAll(".oppositeSlideIn");
     windowHeight = window.innerHeight;
   }
 
@@ -50,14 +53,24 @@ setTimeout(() => {
         fadeInElement.classList.remove("fadeIn");
       }
     }
-    for (let j = 0; j < slideInElements.length; j++) {
-      let slideInElement = slideInElements[j];
+    for (let i = 0; i < slideInElements.length; i++) {
+      let slideInElement = slideInElements[i];
       let positionFromBottom =
-        slideInElements[j].getBoundingClientRect().bottom;
+        slideInElements[i].getBoundingClientRect().bottom;
 
       if (positionFromBottom - windowHeight <= 0) {
-        slideInElement.classList.add("slide-in");
+        slideInElement.classList.add("slide-in-right");
         slideInElement.classList.remove("slideIn");
+      }
+    }
+    for (let i = 0; i < oppositeSlideInElements.length; i++) {
+      let oppositeSlideInElement = oppositeSlideInElements[i];
+      let positionFromBottom =
+        oppositeSlideInElements[i].getBoundingClientRect().bottom;
+
+      if (positionFromBottom - windowHeight <= 0) {
+        oppositeSlideInElement.classList.add("slide-in-left");
+        oppositeSlideInElement.classList.remove("oppositeSlideIn");
       }
     }
   }
