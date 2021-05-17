@@ -35,20 +35,20 @@
         <span></span>
       </div>
       <ul id="nav-items" class="nobullets">
-        <li class="nav-item"><a href="#">Die Challenge</a></li>
+        <li class="nav-item"><a href="#" class="active">Die Challenge</a></li>
         <li class="nav-item">
-          <a href="./tipps&tricks.html">Tipps & Tricks</a>
+          <a href="./tipps&tricks.html" class="nav-link">Tipps & Tricks</a>
         </li>
         <li class="nav-item">
-          <a href="./proTechnicale.html">Über proTechnicale</a>
+          <a href="./proTechnicale.html" class="nav-link">Über proTechnicale</a>
         </li>
-        <li class="nav-item accent bold">
-          <a href="./spenden.html">Spenden</a>
+        <li class="nav-item">
+          <a href="./spenden.html" class="nav-link spenden">Spenden</a>
         </li>
       </ul>
     </nav>
     <header>
-      <picture>
+      <picture class="plane-container">
         <source
           srcset="./resources/plane-desktop1.svg"
           media="(min-width: 780px)"
@@ -60,7 +60,7 @@
         <img src="./resources/plane1.svg" id="plane" class="plane" />
       </picture>
 
-      <div class="title">
+      <div class="title fadeIn">
         <svg width="100%" height="50%">
           <text x="50%" y="40%" text-anchor="middle">
             Paper Plane
@@ -76,8 +76,9 @@
         <img src="resources/globe.png" class="icon-xs" />
       </div>
 
-      <h3>10 Jahre proTechnicale</h3>
-      <h3>Wir fliegen auf MINT – fliegt doch mit!</h3>
+      <h3 >10 Jahre proTechnicale</br></br>
+      Wir fliegen auf MINT – fliegt doch mit!</h3>
+    </div>
     </header>
 
     <section id="introduction" class="colored-background">
@@ -85,12 +86,11 @@
         src="./resources/protechnicale-students.jpg"
         class="img-students fadeIn"
       />
-      <h4>#mintflieger</h4>
-      <p class="bold">
+      <h4 class="slideIn">#mintflieger</h4>
+      <p class="bold oppositeSlideIn">
         Seit 2011 unterstützt proTechnicale junge Frauen dabei, ihre
         MINT-Karriere zu starten.
-      </p>
-      <p>
+      </br></br>
         Dieses Jubiläum wollen wir nun ordentlich feiern: mit der proTechnicale
         Paper Plane Challenge.
       </p>
@@ -100,7 +100,7 @@
     </section>
 
     <section id="participation">
-      <h4>
+      <h4 class="slideIn">
         Macht mit beim proTechnicale Papierflieger Wettbewerb!<br /><br />
         So geht's:
       </h4>
@@ -146,7 +146,7 @@
     </section>
 
     <section id="categories">
-      <h4>In diesen drei Kategorien könnt ihr antreten</h4>
+      <h4 class="oppositeSlideIn">In diesen drei Kategorien könnt ihr antreten</h4>
       <div class="flexbox">
         <div class="category fadeIn">
           <img src="resources/distance.svg" class="icon-m colored" />
@@ -181,7 +181,7 @@
     </section>
 
     <section id="prizes">
-      <h4>Auf die Sieger warten tolle Preise</h4>
+      <h4 class="slideIn">Auf die Sieger warten tolle Preise</h4>
       <div class="flexbox">
         <div class="prize-container fadeIn">
           <div class="inline">
@@ -267,6 +267,6 @@
       </div>
       <p class="author">Made with &#128156; by Marianne Fabre</p>
     </footer>
-    <script src="./script.js"></script>
+    <script src="./script1.js"></script>
   </body>
 </html>
