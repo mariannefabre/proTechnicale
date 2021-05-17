@@ -43,18 +43,19 @@ setTimeout(() => {
   function checkPosition() {
     for (let i = 0; i < fadeInElements.length; i++) {
       let fadeInElement = fadeInElements[i];
-      let positionFromTop = fadeInElements[i].getBoundingClientRect().bottom;
+      let positionFromBottom = fadeInElements[i].getBoundingClientRect().bottom;
 
-      if (positionFromTop - windowHeight <= 0) {
+      if (positionFromBottom - windowHeight <= 0) {
         fadeInElement.classList.add("fade-in");
         fadeInElement.classList.remove("fadeIn");
       }
     }
     for (let j = 0; j < slideInElements.length; j++) {
       let slideInElement = slideInElements[j];
-      let positionFromTop1 = slideInElements[j].getBoundingClientRect().bottom;
+      let positionFromBottom =
+        slideInElements[j].getBoundingClientRect().bottom;
 
-      if (positionFromTop1 - windowHeight <= 0) {
+      if (positionFromBottom - windowHeight <= 0) {
         slideInElement.classList.add("slide-in");
         slideInElement.classList.remove("slideIn");
       }
