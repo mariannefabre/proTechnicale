@@ -235,11 +235,15 @@ nav {
     padding-top: 30vh;
     text-align: center;
   }
-  .nav-item a {
+  .nav-link,
+  .active {
     padding-bottom: 1.2em;
     display: block;
     font-size: 25px;
     color: var(--color-purple);
+  }
+  .active {
+    font-weight: 700;
   }
 }
 @media only screen and (min-width: 780px) {
@@ -256,12 +260,15 @@ nav {
     text-align: center;
     width: 100%;
   }
-  .nav-item a:hover,
-  .nav-item a:focus,
-  .nav-item a:active {
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link:active,
+  .active,
+  .active:hover {
     color: var(--color-purple);
   }
-  .nav-item a::before {
+  .nav-link::before,
+  .active::before {
     content: "";
     display: block;
     position: relative;
@@ -273,13 +280,15 @@ nav {
     transform: scale(0, 1);
     transition: color 0.1s, transform 0.2s ease-out;
   }
-  .nav-item a:active::before {
-    background-color: var(--color-purple);
-  }
-  .nav-item a:hover::before,
-  a:focus::before {
+  .nav-link:hover::before,
+  .nav-link:focus::before,
+  .active::before {
     transform-origin: left top;
     transform: scale(1, 1);
+  }
+  .spenden {
+    color: var(--color-purple);
+    font-weight: 700;
   }
 }
 .logo {
@@ -613,6 +622,7 @@ footer {
 
 /* ANIMATION */
 .slideIn,
+.oppositeSlideIn,
 .fadeIn {
   visibility: hidden;
   overflow: hidden;
@@ -620,8 +630,11 @@ footer {
 .fade-in {
   animation: fadeIn 1.4s;
 }
-.slide-in {
-  animation: slideIn ease-out 1s;
+.slide-in-right {
+  animation: slideInRight ease-out 1s;
+}
+.slide-in-left {
+  animation: slideInLeft ease-out 1s;
 }
 @keyframes fadeIn {
   0% {
@@ -632,10 +645,17 @@ footer {
     opacity: 1;
   }
 }
-
-@keyframes slideIn {
+@keyframes slideInRight {
   from {
     transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
   }
   to {
     transform: translateX(0%);
