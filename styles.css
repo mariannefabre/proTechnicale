@@ -635,12 +635,10 @@ footer {
 
 @keyframes slideIn {
   from {
-    margin-left: 100%;
-    width: 300%;
+    transform: translateX(100%);
   }
   to {
-    margin-left: 0%;
-    width: 100%;
+    transform: translateX(0%);
   }
 }
 /* .fade-in {
