@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" x="0" y="0" viewBox="0 0 4000 2000" xml:space="preserve" class="">
+<path
+          id="planePath"
+          fill= "none"
+          d="M-226 900 c439,4 636,-213 934,-225 755,-31 602,769 1334,658 562,-86 668,-698 266,-908 -401,-210 -893,189 -632,630 260,441 747,121 1051,91 360,-36 889,179 889,179"
+        />
+        <g id = "plane" xmlns="http://www.w3.org/2000/svg" transform="rotate(45) scale(0.4)" >
+        <path d="m216.199 512 295.801-512-268.534 364.169z" fill="#bca3e9" data-original="#f2c43a"/>
+        <path d="m0 294.223 512-294.223-345.042 342.82z" fill="#e0cfff" data-original="#fff4cf"/>
+        <path d="m512 0-268.534 364.169 186.678 53.423z" fill="#e0cfff" data-original="#fff4cf"/>
+        <path d="m391.126 406.426 39.018 11.166 81.856-417.592z" fill="#ddc5ff" data-original="#fcedbb"/>
+        <path d="m166.958 342.82 49.241 169.18 27.267-147.831 268.534-364.169z" fill="#ccb4ef" data-original="#f7df8a"/>
+        </g>
+                <animateMotion 
+                   xlink:href="#plane"
+                   dur="4s" 
+                   repeatCount="indefinite" 
+                   rotate="auto">
+      <mpath xlink:href="#planePath" />
+    </animateMotion>
+        </svg>
