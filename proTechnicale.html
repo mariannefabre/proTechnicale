@@ -22,12 +22,15 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Josefin+Sans:wght@300;400&family=Open+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
     <link rel="stylesheet" href="styles.css" />
     <title>proTechnicale Paper Plane Challenge</title>
   </head>
   <body>
     <nav>
-      <img class="logo" src="./resources/logo.png" alt="logo-proTechnicale" />
+      <a href="https://www.protechnicale.de/" target="_blank">
+        <img class="logo" src="./resources/logo.png" alt="logo-proTechnicale"
+      /></a>
       <div id="nav-icon">
         <span></span>
         <span></span>
@@ -50,7 +53,7 @@
       </ul>
     </nav>
 
-    <section class="about">
+    <section class="section">
       <h1 class="slideIn">
         MINT – diese Abkürzung steht für die Fachrichtungen Mathematik,
         Informatik, Naturwissenschaften und Technik.
@@ -63,20 +66,18 @@
         allowfullscreen
         class="iframe fadeIn"
       ></iframe>
-        <p class="oppositeSlideIn">
-          Noch immer sind Frauen in diesen Bereichen unterrepräsentiert. So
-          waren 2019 beispielsweise nur 26% der Studienanfänger in den
-          Ingenieurwissenschaften weiblich (Quelle: Statistisches Bundesamt).
-        </br>
-      </br>
+      <p class="oppositeSlideIn">
+        Noch immer sind Frauen in diesen Bereichen unterrepräsentiert. So waren
+        2019 beispielsweise nur 26% der Studienanfänger in den
+        Ingenieurwissenschaften weiblich (Quelle: Statistisches Bundesamt).
+        <br /><br />
         Das technische Qualifizierungs- und Orientierungsjahr proTechnicale
         richtet sich speziell an junge Frauen und begeistert die Teilnehmerinnen
         für natur- und ingenieurwissenschaftliche Studiengänge und Berufe. Es
         eröffnet ihnen die Chance, ihre technischen Fähigkeiten auszubilden,
         Kontakte zu Hochschulen und Unternehmen zu knüpfen und die eigene
         Persönlichkeit weiterzuentwickeln.
-      </br>
-      </br>
+        <br /><br />
         Drei Aspekte greifen in dem Programm ineinander:
         <span class="bold"
           >die Vermittlung theoretischer Grundlagen, Einblicke in die
@@ -87,28 +88,32 @@
       <button class="btn-purple">Mehr zu proTechnicale</button>
     </section>
 
-    <section class="about">
+    <section class="section colored-background">
       <h2 class="slideIn">
         Mit dem Papierflieger Wettbewerb wollen wir gemeinsam mit eurer
         Unterstützung
       </h2>
       <div class="flexbox">
         <div class="about-item fadeIn">
-          <img src="resources/about1.jpg" class="img-about" alt="" />
+          <img
+            src="resources/about1.jpg"
+            class="img-about"
+            alt="proTechnicale students working"
+          />
           <p>
             Zeigen, wie spannend, vielseitig und spaßig die MINT-Welt ist und
             weitere (junge) Menschen für die MINT-Fächer begeistern.
           </p>
         </div>
         <div class="about-item fadeIn">
-          <img src="resources/about2.jpg" class="img-about" alt="" />
+          <img src="resources/about2.jpg" class="img-about" alt="team spirit" />
           <p>
             Unternehmen und Organisationen die Gelegenheit geben, auch in
             Pandemie-Zeiten ihre Teams enger zusammenzuschweißen.
           </p>
         </div>
         <div class="about-item fadeIn">
-          <img src="resources/about3.jpg" class="img-about" alt="" />
+          <img src="resources/about3.jpg" class="img-about" alt="donation" />
           <p>
             Auf proTechnicale aufmerksam machen, um die Unterstützung von jungen
             MINT-Enthusiastinnen für die nächsten 10 Jahre zu sichern.
@@ -117,11 +122,14 @@
       </div>
     </section>
 
-    <section id="acknowledgment" >
+    <section class="section acknowledgment">
       <h2 class="fadeIn">Danksagung</h2>
       <p class="fadeIn">
-        An dieser Stelle möchten wir uns ganz herzlich bei 
-        <a href="https://www.i-hired-gunnar.de/" class="link">Gunnar Hartmann</a> und
+        An dieser Stelle möchten wir uns ganz herzlich bei
+        <a href="https://www.i-hired-gunnar.de/" class="link"
+          >Gunnar Hartmann</a
+        >
+        und
         <a href="https://mariannefabre.me/" class="link">Marianne Fabre</a> für
         Ihre ehrenamtliche Unterstützung in der Planung und Umsetzung dieser
         Challenge bedanken!
@@ -134,7 +142,27 @@
         <p><a href="./kontakt.html">Kontakt</a></p>
         <p><a href="./datenschutzerklearung.html">Datenschutzerklärung</a></p>
       </div>
+      <div class="social-media">
+        <a
+          href="https://de-de.facebook.com/proTechnicaleHamburg/"
+          target="_blank"
+          ><img src="./resources/facebook.svg" class="icon-xxs"
+        /></a>
+        <a href="https://www.instagram.com/protechnicale/" target="_blank"
+          ><img src="./resources/instagram.svg" class="icon-xxs"
+        /></a>
+        <a href="https://www.protechnicale.de/" target="_blank"
+          ><img src="./resources/www.svg" class="icon-xxs"
+        /></a>
+      </div>
       <p class="author">Made with &#128156; by Marianne Fabre</p>
+      <p class="author">
+        <a href="https://www.flaticon.com" target="_blank" class="link"
+          >Icons</a
+        >
+        made by Freepik, DinosoftLabs, Those Icons & Smashicons
+        <br />
+      </p>
     </footer>
 
     <script src="./script.js"></script>

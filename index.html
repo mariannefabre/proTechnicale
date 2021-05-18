@@ -29,7 +29,8 @@
   <body>
     <nav>
       <a href="https://www.protechnicale.de/" target="_blank">
-      <img class="logo" src="./resources/logo.png" alt="logo-proTechnicale" /></a>
+        <img class="logo" src="./resources/logo.png" alt="logo-proTechnicale"
+      /></a>
       <div id="nav-icon">
         <span></span>
         <span></span>
@@ -61,30 +62,32 @@
           srcset="./resources/plane-tablet.svg"
           media="(min-width: 500px)"
         />
-        <img src="./resources/plane.svg" id="plane" class="plane" />
+        <img src="./resources/plane.svg" id="plane" class="plane" alt="plane" />
       </picture>
 
       <h1 class="fadeIn">Paper Plane Challenge</h1>
       <div class="information inline fadeIn">
-        <img src="resources/calendar.png" class="icon-xs" />
+        <img src="resources/calendar.svg" class="icon-xs" alt="calendar" />
         <h2>31. Mai - 11. Juni 2021 | Online</h2>
-        <img src="resources/globe.png" class="icon-xs" />
+        <img src="resources/globe.svg" class="icon-xs" alt="globe" />
       </div>
 
-      <h3 class="fadeIn">10 Jahre proTechnicale</h3>
-      <h3 class="fadeIn">Wir fliegen auf MINT – fliegt doch mit!</h3>
+      <h3 class="fadeIn">
+        10 Jahre proTechnicale<br /><br />Wir fliegen auf MINT – fliegt doch
+        mit!
+      </h3>
     </header>
-    <section id="introduction" class="colored-background">
+    <section class="colored-background section">
       <img
         src="./resources/protechnicale-students.jpg"
         class="img-students fadeIn"
+        alt="proTechnicale students"
       />
-      <h4 class="slideIn">#mintflieger</h4>
+      <h3 class="center slideIn">#mintflieger</h3>
       <p class="bold slideIn">
         Seit 2011 unterstützt proTechnicale junge Frauen dabei, ihre
         MINT-Karriere zu starten.
-      </br>
-    </br>
+        <br /><br />
         Dieses Jubiläum wollen wir nun ordentlich feiern: mit der proTechnicale
         Paper Plane Challenge.
       </p>
@@ -93,41 +96,42 @@
       </button>
     </section>
 
-    <section id="participation">
-      <h4 class="oppositeSlideIn">
+    <section class="section">
+      <h3 class="oppositeSlideIn">
         Macht mit beim proTechnicale Papierflieger Wettbewerb!<br /><br />
         So geht's:
-      </h4>
+      </h3>
       <div class="flexbox-reverse">
         <picture>
           <source
             srcset="./resources/icons-desktop.svg"
             media="(min-width: 780px)"
           />
-          <img src="./resources/icons-mobile.svg" class="participation-icons" />
+          <img
+            src="./resources/icons-mobile.svg"
+            class="participation-icons center"
+          />
         </picture>
 
         <div class="flexbox steps">
-          <div class="inline slideIn">
+          <div class="inline slideIn step">
             <div class="number">1</div>
             <div>
-              <p class="participation-step bold">
-                Papierflieger bauen und abheben lassen.
-              </p>
+              <p class="bold">Papierflieger bauen und abheben lassen.</p>
             </div>
           </div>
-          <div class="inline slideIn">
+          <div class="inline slideIn step">
             <div class="number">2</div>
             <div>
-              <p class="participation-step bold">
+              <p class="bold">
                 Flug samt Flugdauer oder Flugweite in einem Video dokumentieren.
               </p>
             </div>
           </div>
-          <div class="inline slideIn">
+          <div class="inline slideIn step">
             <div class="number">3</div>
             <div>
-              <p class="participation-step">
+              <p>
                 <span class="bold">
                   Video auf Instagram, Facebook oder LinkedIn mit #mintflieger
                   posten und @proTechnicale taggen. </span
@@ -139,8 +143,8 @@
       </div>
     </section>
 
-    <section id="categories">
-      <h4 class="slideIn">In diesen drei Kategorien könnt ihr antreten</h4>
+    <section class="section colored-background">
+      <h3 class="slideIn">In diesen drei Kategorien könnt ihr antreten</h3>
       <div class="flexbox">
         <div class="category fadeIn">
           <img src="resources/distance.svg" class="icon-m colored" />
@@ -174,8 +178,8 @@
       </div>
     </section>
 
-    <section id="prizes">
-      <h4 class="oppositeSlideIn">Auf die Sieger warten tolle Preise</h4>
+    <section class="section">
+      <h3 class="oppositeSlideIn">Auf die Sieger warten tolle Preise</h3>
       <div class="flexbox">
         <div class="prize-container fadeIn">
           <div class="inline">
@@ -237,7 +241,7 @@
       </div>
     </section>
 
-    <section id="donation">
+    <section class="section acknowledgment">
       <img src="resources/donation.svg" alt="donation" class="icon-m" />
       <p class="bold center">
         Wir freuen uns, wenn ihr mit eurem Team eine freiwillige Startgebühr
@@ -259,7 +263,27 @@
         <p><a href="./kontakt.html">Kontakt</a></p>
         <p><a href="./datenschutzerklearung.html">Datenschutzerklärung</a></p>
       </div>
+      <div class="social-media">
+        <a
+          href="https://de-de.facebook.com/proTechnicaleHamburg/"
+          target="_blank"
+          ><img src="./resources/facebook.svg" class="icon-xxs"
+        /></a>
+        <a href="https://www.instagram.com/protechnicale/" target="_blank"
+          ><img src="./resources/instagram.svg" class="icon-xxs"
+        /></a>
+        <a href="https://www.protechnicale.de/" target="_blank"
+          ><img src="./resources/www.svg" class="icon-xxs"
+        /></a>
+      </div>
       <p class="author">Made with &#128156; by Marianne Fabre</p>
+      <p class="author">
+        <a href="https://www.flaticon.com" target="_blank" class="link"
+          >Icons</a
+        >
+        made by Freepik, DinosoftLabs, Those Icons & Smashicons
+        <br />
+      </p>
     </footer>
     <script src="./script.js"></script>
   </body>

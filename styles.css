@@ -30,7 +30,6 @@ a:focus {
 h1 {
   color: var(--color-purple);
   font-size: 1.4rem;
-  text-align: center;
 }
 header h1 {
   font-size: 3.5rem;
@@ -45,34 +44,25 @@ header h1 {
   margin: 0;
 }
 header h2 {
-  background: -webkit-linear-gradient(
-    rgba(34, 12, 124, 0.81),
-    rgba(129, 38, 161, 0.58),
-    rgba(195, 61, 3, 0.767)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--color-purple);
   font-weight: 300;
   font-family: "Nunito", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1rem;
+}
+header h3 {
+  margin: 10px 0;
+  line-height: 22px;
+  color: var(--color-purple);
+  font-weight: 500;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.35rem;
 }
 h2 {
   font-size: 1.3rem;
   color: var(--color-purple);
-  text-align: center;
 }
 h3 {
-  font-weight: 300;
-  font-family: "Nunito", sans-serif;
-  color: var(--color-blue);
-  font-size: 1.6rem;
-}
-header h3 {
-  margin: 10px 0;
-}
-h4 {
   color: var(--color-purple);
-  text-align: center;
   font-size: 1.4rem;
   margin-top: 2rem;
 }
@@ -82,6 +72,9 @@ section {
 @media only screen and (min-width: 780px) {
   header h1 {
     font-size: 4.5rem;
+  }
+  header h3 {
+    font-size: 1.6rem;
   }
   section {
     padding: 50px 70px 70px 70px;
@@ -105,8 +98,9 @@ button {
   padding: 10px 30px;
   border-radius: 25px;
   font-weight: 600;
-  margin: 15px 0;
   width: fit-content;
+  margin: 40px auto 20px auto;
+  display: block;
 }
 
 /* UTILITIES */
@@ -131,6 +125,8 @@ button {
 .icon-m {
   width: 60px;
   height: 60px;
+  display: block;
+  margin: 0 auto;
 }
 .icon-s {
   width: 40px;
@@ -139,6 +135,11 @@ button {
 .icon-xs {
   width: 20px;
   height: 20px;
+  margin: auto 10px;
+}
+.icon-xxs {
+  width: 15px;
+  height: 15px;
   margin: auto 10px;
 }
 .colored-background {
@@ -273,7 +274,7 @@ nav {
     content: "";
     display: block;
     position: relative;
-    bottom: 27px;
+    bottom: 30px;
     height: 3px;
     width: 100%;
     background-color: var(--color-purple);
@@ -334,6 +335,7 @@ header {
   text-align: center;
 }
 .img-students {
+  display: block;
   width: 90%;
   max-width: 430px;
   margin: 0 auto;
@@ -341,9 +343,6 @@ header {
   box-shadow: 8px 8px rgba(123, 62, 221, 0.4);
 }
 /* SECTION PARTICIPATION */
-#participation {
-  text-align: center;
-}
 @media only screen and (max-width: 779px) {
   .participation-icons {
     width: 25vw;
@@ -366,9 +365,6 @@ header {
   left: 40px;
   bottom: 33px;
 }
-.participation-step {
-  text-align: left;
-}
 .steps {
   justify-content: space-evenly;
 }
@@ -376,6 +372,9 @@ header {
   .steps {
     margin-left: -25px;
   }
+}
+.step {
+  /* TO DO */
 }
 /* SECTION CATEGORIES */
 #categories {
@@ -436,7 +435,7 @@ header {
   margin: 10px;
   font-size: 1.1rem;
 }
-@media only screen and (min-width: 780px) and (max-width: 900px) {
+@media only screen and (min-width: 780px) and (max-width: 1330px) {
   .prize-category {
     width: 50%;
   }
@@ -512,21 +511,24 @@ footer {
     align-items: center;
   }
 }
+.social-media {
+  margin: 20px 18px;
+}
 .author {
   font-size: 0.9rem;
   font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
 }
 /* PAGE: TIPS&TRICKS */
-#tips {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 700px;
+.section {
+  padding-right: 8%;
+  padding-left: 8%;
 }
-.tips {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media only screen and (min-width: 780px) {
+  .section {
+    padding-right: 20%;
+    padding-left: 20%;
+  }
 }
 .tips-iframe {
   width: 95%;
@@ -535,9 +537,14 @@ footer {
 }
 .iframe-container {
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 .quote {
   font-style: italic;
+}
+.instagram-content {
+  justify-content: center;
+  flex-wrap: wrap;
 }
 /* PAGE: DONATION */
 .donation {
@@ -594,21 +601,22 @@ footer {
 .iframe {
   width: 350px;
   height: 215px;
+  display: block;
+  margin: 30px auto;
 }
 @media only screen and (min-width: 650px) {
   .iframe {
-    width: 560px;
-    height: 315px;
+    width: 500px;
+    height: 285px;
   }
 }
-#acknowledgment {
+.acknowledgment {
   background: rgba(150, 73, 186, 0.9);
   color: #fff;
-  padding: 60px 40px;
-  text-align: center;
 }
-#acknowledgment h2 {
+.acknowledgment h2 {
   color: inherit;
+  text-align: center;
 }
 @media only screen and (min-width: 780px) {
   #acknowledgment {
