@@ -351,8 +351,7 @@ header {
 }
 @media only screen and (min-width: 780px) {
   .participation-icons {
-    width: 90%;
-    margin: 0 auto;
+    width: 80%;
     display: block;
     max-width: 1000px;
   }
@@ -381,6 +380,9 @@ header {
     flex: 1;
     margin-top: 30px;
     margin-left: -20px;
+  }
+  .step {
+    margin-left: -30px;
   }
 }
 .step {
