@@ -558,6 +558,7 @@ footer {
 .instagram-content {
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: row;
 }
 .instagram-media {
   background: #fff;
