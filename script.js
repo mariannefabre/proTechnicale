@@ -12,7 +12,6 @@ const openSideNav = function () {
   function closeNav() {
     sideNav.style.width = "0";
   }
-
   document.getElementById("nav-icon").classList.toggle("open");
   isNavOpen() ? closeNav() : openNav();
 };
@@ -24,10 +23,12 @@ document
   .addEventListener("click", openSideNav, true);
 
 // plane animation
-
-setTimeout(() => {
+if (document.getElementById("plane")) {
   document.getElementById("plane").style.visibility = "inherit";
-}, 1500);
+  setTimeout(() => {
+    document.getElementById("plane").style.visibility = "inherit";
+  }, 1500);
+}
 
 // animations
 (function () {
@@ -51,6 +52,8 @@ setTimeout(() => {
       if (positionFromBottom - windowHeight <= 0) {
         fadeInElement.classList.add("fade-in");
         fadeInElement.classList.remove("fadeIn");
+        fadeInElements = document.querySelectorAll(".fadeIn");
+        i--;
       }
     }
     for (let i = 0; i < slideInElements.length; i++) {
@@ -59,8 +62,12 @@ setTimeout(() => {
         slideInElements[i].getBoundingClientRect().bottom;
 
       if (positionFromBottom - windowHeight <= 0) {
+        console.log("2");
+
         slideInElement.classList.add("slide-in-right");
         slideInElement.classList.remove("slideIn");
+        slideInElements = document.querySelectorAll(".slideIn");
+        i--;
       }
     }
     for (let i = 0; i < oppositeSlideInElements.length; i++) {
@@ -69,8 +76,11 @@ setTimeout(() => {
         oppositeSlideInElements[i].getBoundingClientRect().bottom;
 
       if (positionFromBottom - windowHeight <= 0) {
+        console.log("3");
         oppositeSlideInElement.classList.add("slide-in-left");
         oppositeSlideInElement.classList.remove("oppositeSlideIn");
+        oppositeSlideInElements = document.querySelectorAll(".oppositeSlideIn");
+        i--;
       }
     }
   }
