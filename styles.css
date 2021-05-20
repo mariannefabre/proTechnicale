@@ -573,6 +573,9 @@ footer {
   width: -webkit-calc(100% - 2px);
   width: calc(100% - 2px);
 }
+.EmbedFrame {
+  height: 326px;
+}
 /* PAGE: DONATION */
 .donation {
   width: 90%;
