@@ -557,6 +557,7 @@ footer {
 }
 .instagram-content {
   flex-wrap: wrap;
+  justify-content: center;
 }
 .instagram-media {
   background: #fff;
