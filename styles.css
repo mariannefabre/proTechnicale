@@ -352,8 +352,9 @@ header {
 @media only screen and (min-width: 780px) {
   .participation-icons {
     width: 90%;
-    max-width: 750px;
-    margin-bottom: 60px;
+    margin: 0 auto;
+    display: block;
+    max-width: 1000px;
   }
 }
 .number {
@@ -362,19 +363,29 @@ header {
   color: rgba(178, 178, 178, 0.28);
   font-weight: 700;
   position: relative;
-  left: 40px;
+  left: 35px;
   bottom: 33px;
 }
 .steps {
   justify-content: space-evenly;
+  margin-top: 20px;
 }
 @media only screen and (max-width: 500px) {
   .steps {
     margin-left: -25px;
+    margin-bottom: -20px;
+  }
+}
+@media only screen and (min-width: 780px) {
+  .steps {
+    flex: 1;
+    margin-top: 30px;
+    margin-left: -20px;
   }
 }
 .step {
-  /* TO DO */
+  flex: 1 1 0;
+  margin-top: 10px;
 }
 /* SECTION CATEGORIES */
 #categories {
