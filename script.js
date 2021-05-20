@@ -34,13 +34,11 @@ if (document.getElementById("plane")) {
 (function () {
   let fadeInElements;
   let slideInElements;
-  let oppositeSlideInElements;
   let windowHeight;
 
   function init() {
     fadeInElements = document.querySelectorAll(".fadeIn");
     slideInElements = document.querySelectorAll(".slideIn");
-    oppositeSlideInElements = document.querySelectorAll(".oppositeSlideIn");
     windowHeight = window.innerHeight;
   }
 
@@ -62,24 +60,9 @@ if (document.getElementById("plane")) {
         slideInElements[i].getBoundingClientRect().bottom;
 
       if (positionFromBottom - windowHeight <= 0) {
-        console.log("2");
-
-        slideInElement.classList.add("slide-in-right");
+        slideInElement.classList.add("slide-in");
         slideInElement.classList.remove("slideIn");
         slideInElements = document.querySelectorAll(".slideIn");
-        i--;
-      }
-    }
-    for (let i = 0; i < oppositeSlideInElements.length; i++) {
-      let oppositeSlideInElement = oppositeSlideInElements[i];
-      let positionFromBottom =
-        oppositeSlideInElements[i].getBoundingClientRect().bottom;
-
-      if (positionFromBottom - windowHeight <= 0) {
-        console.log("3");
-        oppositeSlideInElement.classList.add("slide-in-left");
-        oppositeSlideInElement.classList.remove("oppositeSlideIn");
-        oppositeSlideInElements = document.querySelectorAll(".oppositeSlideIn");
         i--;
       }
     }
