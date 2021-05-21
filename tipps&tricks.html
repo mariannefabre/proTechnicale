@@ -19,7 +19,7 @@
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Josefin+Sans:wght@300;400&family=Open+Sans:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Josefin+Sans:wght@300;400&family=Open+Sans:wght@300;400;600;700&family=PT+Serif:ital@1&display=swap"
       rel="stylesheet"
     />
     <link rel="shortcut icon" type="image/png" href="./favicon.png" />
@@ -54,23 +54,34 @@
     </nav>
 
     <section class="section">
-      <img
-        src="./resources/tipps.jpg"
-        alt="people throwing paperplanes"
-        class="img-donation fadeIn"
-      />
+      <div class="fadeIn">
+        <img
+          src="./resources/tipps.jpg"
+          alt="people throwing paperplanes"
+          class="img-donation"
+        />
+        <p class="author">
+          Photo by
+          <a href="">Uli Deck/DPA.</a>
+        </p>
+      </div>
+
       <h1 class="slideIn">Wie baue ich den perfekten Papierflieger?</h1>
       <p class="slideIn">
         Du willst bei der proTechnicale Paper Plane Challenge mitmachen und
         weißt noch nicht so recht, wie man einen Papierflieger baut? Dann haben
         wir hier ein paar Tipps und Tricks für dich.
-        <a href="resources/Faltanleitung_Papierflieger.pdf" target="_blank">
-          <button class="btn-purple">Inspirieren lassen</button></a
-        >
       </p>
     </section>
-
     <section class="section colored-background">
+      <iframe
+        src="https://www.youtube.com/embed/XET12hK83fM"
+        title="Kai Wicke, Deutscher Meister im Papierflieger-Weitwurf"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        class="iframe fadeIn"
+      ></iframe>
       <h2 class="slideIn">
         Laut Papierflieger-Champion, Kai Wicke, gibt es den perfekten Flieger
         sowieso nicht.
@@ -79,14 +90,6 @@
         Kai wurde 2006 Deutscher Meister im Papierflieger-Weitwurf mit einer
         Rekordweite von 37,36 Metern.
       </p>
-      <iframe
-        src="https://www.youtube.com/embed/rfzwID08DoE"
-        title="proTechnicale movie"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        class="iframe fadeIn"
-      ></iframe>
       <p class="quote slideIn">
         "Es kommt darauf an, für welche Disziplin man faltet", erklärt Kai,
         "wenn man wie ich die größte Distanz erreichen will, dann muss man ein
@@ -96,6 +99,10 @@
         dann noch hinten einreißen oder Ruder bauen, damit die Flugzeuge
         bestimmte Figuren fliegen."
       </p>
+
+      <a href="resources/Faltanleitung_Papierflieger.pdf" target="_blank">
+        <button class="btn-purple">Inspirieren lassen</button></a
+      >
     </section>
 
     <section class="section">
