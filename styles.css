@@ -665,6 +665,12 @@ footer {
   text-decoration: underline;
 }
 
+/* PAGE: T&Cs */
+
+.general-rules li {
+  margin-bottom: 8px;
+}
+
 /* ANIMATION */
 .slideIn,
 .fadeIn {
