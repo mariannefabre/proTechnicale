@@ -150,18 +150,9 @@ button {
   display: flex;
   flex-direction: column;
 }
-.flexbox-reverse {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-}
-
 @media only screen and (min-width: 780px) {
   .flexbox {
     flex-direction: row;
-  }
-  .flexbox-reverse {
-    flex-direction: column;
   }
 }
 /* NAVIGATION BAR */
@@ -343,17 +334,26 @@ header {
   box-shadow: 8px 8px rgba(123, 62, 221, 0.4);
 }
 /* SECTION PARTICIPATION */
+.participation {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 780px) {
+  .participation {
+    flex-direction: column;
+  }
+  .participation-icons {
+    width: 80%;
+    display: block;
+    max-width: 880px;
+  }
+}
 @media only screen and (max-width: 779px) {
   .participation-icons {
     width: 25vw;
     max-width: 110px;
-  }
-}
-@media only screen and (min-width: 780px) {
-  .participation-icons {
-    width: 80%;
-    display: block;
-    max-width: 1000px;
   }
 }
 .number {
